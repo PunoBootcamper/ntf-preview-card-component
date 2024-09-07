@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+:root {
+    --primary-color-soft-blue: hsl(215, 51%, 70%);
+    --primary-color-cian:hsl(178, 100%, 50%);
+    --neutral-color-very-dark-blue-main-bg: hsl(217, 54%, 11%);
+    --neutral-color-very-dark-blue-card-bg: hsl(216, 50%, 16%);
+    --neutral-color-very-dark-blue-line: hsl(215, 32%, 27%);
+    --neutral-color-white: hsl(0, 0%, 100%);
+}
