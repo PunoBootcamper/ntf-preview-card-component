@@ -30,7 +30,7 @@ a{
     border-radius: 10px;
     max-width: 350px;
     padding: 20px; 
-    box-shadow: 10px 10px 5px black;
+    box-shadow: 10px 30px 15px rgba(0, 0, 0, 0.1), -10px 30px 15px rgba(0, 0, 0, 0.1), 0px 30px 15px rgba(0, 0, 0, 0.1);
 }
 .card__head__image{
     position: relative;
@@ -55,4 +55,24 @@ a{
 }
 .card__head__image:hover::after{
     opacity: 1;
+}
+.card__body {
+    padding: 20px 0;
+    border-bottom: 1px solid var(--neutral-very-dark-blue-line);
+    margin-bottom: 10px;
+}
+.card__body__title{
+    color: var(--neutral-white);
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.card__body__title:hover{
+    color: var(--primary-cian);
+}
+.card__body__text{
+    color: var(--primary-soft-blue);
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 20px;
 }
