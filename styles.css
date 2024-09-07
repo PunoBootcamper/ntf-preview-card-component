@@ -1,10 +1,58 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 
 :root {
-    --primary-color-soft-blue: hsl(215, 51%, 70%);
-    --primary-color-cian:hsl(178, 100%, 50%);
-    --neutral-color-very-dark-blue-main-bg: hsl(217, 54%, 11%);
-    --neutral-color-very-dark-blue-card-bg: hsl(216, 50%, 16%);
-    --neutral-color-very-dark-blue-line: hsl(215, 32%, 27%);
-    --neutral-color-white: hsl(0, 0%, 100%);
+    --primary-soft-blue: hsl(215, 51%, 70%);
+    --primary-cian:hsl(178, 100%, 50%);
+    --neutral-very-dark-blue-main-bg: hsl(217, 54%, 11%);
+    --neutral-very-dark-blue-card-bg: hsl(216, 50%, 16%);
+    --neutral-very-dark-blue-line: hsl(215, 32%, 27%);
+    --neutral-white: hsl(0, 0%, 100%);
+}
+* {
+    font-family: "Outfit", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: var(--neutral-very-dark-blue-main-bg);
+    min-height: 100vh;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+a{
+    text-decoration: none;
+}
+.card {
+    background-color: var(--neutral-very-dark-blue-card-bg);
+    border-radius: 10px;
+    max-width: 350px;
+    padding: 20px; 
+    box-shadow: 10px 10px 5px black;
+}
+.card__head__image{
+    position: relative;
+    border-radius: 4px;
+    overflow: hidden;
+    cursor: pointer;
+}
+.card__head__image img{
+    display: block;
+    width: 100%;
+}
+.card__head__image::after{
+    content: url(images/icon-view.svg);
+    background: var(--aqua);
+    position: absolute;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: all 0.25s ease;
+}
+.card__head__image:hover::after{
+    opacity: 1;
 }
