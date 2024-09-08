@@ -76,3 +76,45 @@ a{
     line-height: 1.5;
     margin-bottom: 20px;
 }
+.card__body .wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.card__price, .card__remaining{ 
+    display: flex;
+    font-weight: 500;
+    align-items: center s;
+}
+.card__price{
+    color: var(--primary-cian);
+}
+.card__price__icon, .card__remaining__icon{
+    margin-right: 5px;
+}
+.card__remaining{
+    color: var(--primary-soft-blue);
+}
+.card__footer{
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.card__author-img{
+    width: 40px;
+    border-radius: 50px;
+    border: 3px solid var(--neutral-white);
+    margin-right: 20px;
+}
+.card__author-name{
+    color: var(--primary-soft-blue);
+    font-weight: 500;
+}
+.card__author-name a{
+    color: var(--neutral-white);
+    font-size: 18px;
+    font-weight: 500;
+}
+.card__author-name a:hover{
+    color: var(--primary-cian);
+}
