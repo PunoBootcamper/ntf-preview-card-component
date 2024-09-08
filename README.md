@@ -2,6 +2,8 @@
 
 This is a solution to the NFT PREVIEW CARD project of the Make It Real course.
 
+- You can view HTML page here - [NFT PREVIEW CARD](https://punobootcamper.github.io/ntf-preview-card-component/)
+
 ## Table of contents
 
 - [Overview](#overview)
